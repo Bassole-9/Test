@@ -1,0 +1,56 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajout d'un utilisateur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-100 flex flex-col">
+
+<main class="flex-grow flex items-center justify-center px-4">
+    <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
+
+        <h1>
+             1. Différence entre MongoDB et PostgreSQL
+MongoDB est une base NoSQL orientée documents (JSON/BSON, schéma flexible).
+PostgreSQL est une base relationnelle SQL avec schéma strict et relations (tables, clés).
+
+
+2. Exemple simple de structure de données (utilisateur)
+
+{
+  "id": 1,
+  "nom": "Dupont",
+  "prenom": "Jean",
+  "email": "jean@exemple.com"
+}
+
+
+3. Rôle d’une clé primaire
+Identifier de manière unique chaque enregistrement dans une table/collection et 
+permettre les relations entre données.
+
+
+4. Organisation des données utilisateurs / missions
+Utilisateurs : table/collection users (id, nom, email, …)
+
+Missions : table/collection missions (id, titre, description, user_id)
+Chaque mission référence l’utilisateur via user_id (relation 1 utilisateur → plusieurs missions).
+
+
+        </h1>
+
+       
+    </div>
+</main>
+
+<footer class="bg-blue-800 text-white text-center py-3">
+
+</footer>
+
+</body>
+</html>
